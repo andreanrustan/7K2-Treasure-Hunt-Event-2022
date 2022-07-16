@@ -132,15 +132,15 @@
                             tabledata[i]['result'] = 1
                             tabledata[i]['description'] = data['rewardItem']['rewardTitle']
                         } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
-                            tabledata[i]['description'] = '회원번호 오류'
+                            tabledata[i]['description'] = 'NOT EXISTS PID'
                         } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
-                            tabledata[i]['description'] = '이미 사용한 쿠폰'
+                            tabledata[i]['description'] = 'COUPON ALREADY USE'
                         } else if (data['resultCode'] === 'COUPON_WRONG') {
-                            tabledata[i]['description'] = '잘못된 쿠폰 코드'
+                            tabledata[i]['description'] = 'COUPON WRONG'
         			} else if (data['resultCode'] === 'COUPON_RESTRICT') {
-                            tabledata[i]['description'] = '쿠폰입력 연속 실패. 1시간 후 입력 가능.'
+                            tabledata[i]['description'] = 'COUPON RESTRICT. COUPON ENTRIES FAILED SUCCESSIVELY. CAN BE ENTERED AFTER 1 HOUR.'
                         } else {
-                            tabledata[i]['description'] = '나도 모르는 응답코드'
+                            tabledata[i]['description'] = 'UNKNOWN RESPONSE'
                         }
                         tabledata[i]['response'] = data['resultCode']
                         table.updateData(tabledata)
