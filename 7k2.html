@@ -153,7 +153,7 @@
         }
         
         google.charts.load('current', { packages: ['corechart'] }).then(function () {
-            var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1DRUT0vz938X5qt87_b3s9WiQNuajuFlV/gviz/tq?tqx=out:html&tq=SELECT+B&gid=2000340401');
+            var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1DRUT0vz938X5qt87_b3s9WiQNuajuFlV/gviz/tq?tqx=out:html&tq=SELECT+B,D&gid=2000340401');
             query.send(function (response) {
                 var dataTable = response.getDataTable();
                 var jsonData = dataTable.toJSON();
