@@ -63,7 +63,7 @@
         
         if (uid) { $('#uid').val(uid) }
         var tabledata = [
-            { id: 1, Coupon Code: "", result: 0, response: '', description: 'Request' },
+            { id: 1, code: "", result: 0, response: '', description: 'Request' },
             { id: 2, code: " ", result: 0, response: '', description: 'Request' },
             { id: 3, code: "", result: 0, response: '', description: 'Request' },
             { id: 4, code: "", result: 0, response: '', description: 'Request' },
@@ -161,7 +161,7 @@
                 for (var i = 0; i < jsonData.rows.length; i++) {
                     var htmlData = jsonData.rows[i].c[0].v;
                     var htmlDate = jsonData.rows[i].c[1].v;
-                    tabledata[i]['Coupon Code'] = htmlData;
+                    tabledata[i]['code'] = htmlData;
                     if (htmlDate != "") {
         						$('#datediv span').text(htmlDate + " : ~" + (i + 1) + " add");
                     }
