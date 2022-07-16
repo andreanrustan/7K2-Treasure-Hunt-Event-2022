@@ -134,8 +134,8 @@
                         if (data['resultCode'] === 'SUCCESS') {
                             tabledata[i]['result'] = 1
                             tabledata[i]['description'] = data['rewardItem']['rewardTitle']
-                        } else if (data['resultCode'] === 'NOT_EXISTS_UID') {
-                            tabledata[i]['description'] = 'NOT EXISTS PID'
+                        } else if (data['resultCode'] === 'NOT_EXISTS_PID') {
+                            tabledata[i]['description'] = 'NOT EXISTS UID'
                         } else if (data['resultCode'] === 'COUPON_ALREADY_USE') {
                             tabledata[i]['description'] = 'COUPON ALREADY USE'
                         } else if (data['resultCode'] === 'COUPON_WRONG') {
