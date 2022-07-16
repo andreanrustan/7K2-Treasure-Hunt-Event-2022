@@ -161,7 +161,7 @@
                 for (var i = 0; i < jsonData.rows.length; i++) {
                     var htmlData = jsonData.rows[i].c[0].v;
                     var htmlDate = jsonData.rows[i].c[1].v;
-                    tabledata[i]['code'] = htmlData;
+                    tabledata[i]['Coupon Code'] = htmlData;
                     if (htmlDate != "") {
         						$('#datediv span').text(htmlDate + " : ~" + (i + 1) + " add");
                     }
